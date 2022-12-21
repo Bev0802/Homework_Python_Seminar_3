@@ -3,3 +3,15 @@
 - 45 -> 101101
 - 3 -> 11
 - 2 -> 10'''
+num=int(input('Введите число для перевода в бинарное число: '))
+n=num
+nb=''
+while n!=0 and n!=1:
+    bit = n%2
+    n = n//2
+    nb = nb+str(bit)
+    if n==1:
+        nb=nb+str(n)
+        nb=nb[::-1] # разворот через оператора slice([])
+print(f'{num} => {nb}')
+
