@@ -24,7 +24,7 @@ def ProductList_nItself(list_n):
         list_prod = ProductList(list_n) 
     else: 
     # Поиск переменной у которой нет пары
-        t = list_n[(len(list_n)//2)]  # сдесь значение средней переменной
+        t = list_n[(len(list_n)//2)]  # здесь значение средней переменной
         list_n.remove(t)
         list_prod = ProductList(list_n)     
         list_prod.append(t*t)
