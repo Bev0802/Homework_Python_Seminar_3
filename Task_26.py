@@ -57,4 +57,7 @@ k = int(input("Задайте число: "))
 febonachi = Febonachi(k)
 negafebonachi = Negafebonachi(k)
 
-print (AddingReversalList(febonachi, negafebonachi))
+#print (AddingReversalList(febonachi, negafebonachi))
+
+#Вариант объединения с раворотом певого списка и создание нового с выводом на печать. 
+print(l:=list(((negafebonachi[::-1]) + (febonachi))))
